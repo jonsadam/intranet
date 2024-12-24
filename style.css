@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #5eacfa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand img {
+    width: 180px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #ffcc00;
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://cdc.ui.ac.id/wp-content/uploads/2022/03/Gedung-RSPB-new-1024x641.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #0066cc;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero .btn {
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    background-color: #ffcc00;
+    border-radius: 30px;
+    border: none;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e0b200;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#services h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+
+/* Social Links in Footer */
+.footer-social-icons {
+    margin: 20px 0;
+}
+
+.footer-social-icons a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* Sticky Navbar */
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+/* Service Menu Section */
+.service-menu {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-menu .btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    background-color: #0066cc;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.service-menu .btn:hover {
+    background-color: #005ebd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .hero .btn {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+
+    #services h2 {
+        font-size: 2.5rem;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .service-menu {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
